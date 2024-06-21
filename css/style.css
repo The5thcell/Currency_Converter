@@ -1,0 +1,44 @@
+@import url("./variables.css");
+@import url("./currency-convertor.css");
+@import url("./currency-header.css");
+@import url("./world-map.css");
+
+/* App Container */
+
+.app-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+
+  & h1 {
+    text-align: center;
+    margin: 10vh;
+  }
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+
+    & h1 {
+      margin-top: 0;
+    }
+  }
+}
+
+input,
+select {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: var(--border-radius);
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  text-align: center;
+  &:focus {
+    box-shadow: var(--box-shadow);
+  }
+}

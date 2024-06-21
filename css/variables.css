@@ -1,0 +1,9 @@
+:root {
+  --primary-color: #333;
+  --secondary-color: #111;
+  --white-color: #fff;
+  --light-color: #f4f4f4;
+  --currency-color: #e56115;
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  --border-radius: 5px;
+}
